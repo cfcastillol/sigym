@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 10-09-2015 a las 11:15:38
+-- Tiempo de generación: 12-09-2015 a las 11:20:49
 -- Versión del servidor: 5.6.26
 -- Versión de PHP: 5.5.9-1ubuntu4.11
 
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `ejercicio` (
 --
 
 INSERT INTO `ejercicio` (`id`, `musculoid`, `ejercicio`, `descripcion`, `imagen`, `video`, `usuariocrea`, `fechacrea`, `usuariomodifica`, `fechamodifica`) VALUES
-(7, 1, 'BICEPS EN BANCO', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio eu quam efficitur dignissim. Donec eu neque dolor. Sed facilisis mollis turpis eget feugiat. Nunc pretium eros pellentesque dui consectetur, in malesuada dui tincidunt. Sed convallis, arcu eget porttitor cursus, quam magna efficitur nibh, tincidunt porttitor turpis sapien id neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam volutpat, nibh sed aliquam suscipit, metus felis aliquet lorem, sit amet interdum erat lectus quis sem. Quisque sed quam sed est sagittis gravida. Proin ac rhoncus massa. Vivamus mollis, lorem in porta tincidunt, arcu quam efficitur mauris, id hendrerit libero odio sit amet massa. Nullam ut metus aliquam, dictum sem viverra, cursus lectus. In hac habitasse platea dictumst. Quisque in lectus ac purus elementum blandit.\r\n\r\nMauris vitae ultricies magna, nec fringilla nisl. Phasellus dapibus, purus eget fermentum condimentum, sapien leo sodales augue, quis ultrices mi lacus eu justo. Cras hendrerit diam quis leo blandit tristique. Aenean scelerisque arcu ut ligula convallis, at mattis magna eleifend. Phasellus volutpat eleifend orci, vitae volutpat orci iaculis a. Duis sollicitudin luctus ipsum sit amet sollicitudin. Proin sed porttitor sapien, nec imperdiet leo. Maecenas eu velit fringilla, tristique quam nec, porta libero. Nulla in auctor purus. Aliquam vitae sodales mauris. Ut scelerisque nibh non rhoncus facilisis. Ut tempus leo et odio varius, vitae ultrices lorem aliquam. Proin efficitur sed ligula eget volutpat. Sed tincidunt a neque non egestas. Integer pretium convallis porta.\r\n\r\nPraesent lacinia porta dignissim. Curabitur sapien leo, euismod id mi euismod, ultrices gravida lectus. Etiam quam risus, volutpat sed varius nec, sollicitudin non felis. Praesent nulla felis, venenatis a ante vitae, ultrices accumsan est. Morbi sed diam fringilla, pulvinar turpis sed, ullamcorper enim. Sed vel molestie leo. Vestibulum vitae lacus ut urna vestibulum ullamcorper sed non nulla. Sed eget iaculis augue. Donec lacinia, magna ac eleifend feugiat, augue lacus fermentum velit, sed vehicula mi ex eu ipsum. Nunc sodales orci ac felis elementum viverra. Nam mauris neque, tincidunt sit amet nibh sit amet, convallis cursus urna. Phasellus ultrices bibendum orci, nec feugiat urna posuere quis. Pellentesque non ornare nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ligula et velit placerat viverra. Nunc et lectus ut ex tempus elementum sed et nisl. ', 'uploads/ejerciciodesubidadeimagen.png', '<iframe width="560" height="315" src="https://www.youtube.com/embed/q10Vm7YVpLM" frameborder="0" allowfullscreen></iframe>', '1', '2015-09-09 17:48:00', '1', '2015-09-10 10:52:31');
+(7, 1, 'BICEPS EN BANCO', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio eu quam efficitur dignissim. Donec eu neque dolor. Sed facilisis mollis turpis eget feugiat. Nunc pretium eros pellentesque dui consectetur, in malesuada dui tincidunt. Sed convallis, arcu eget porttitor cursus, quam magna efficitur nibh, tincidunt porttitor turpis sapien id neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam volutpat, nibh sed aliquam suscipit, metus felis aliquet lorem, sit amet interdum erat lectus quis sem. Quisque sed quam sed est sagittis gravida. Proin ac rhoncus massa. Vivamus mollis, lorem in porta tincidunt, arcu quam efficitur mauris, id hendrerit libero odio sit amet massa. Nullam ut metus aliquam, dictum sem viverra, cursus lectus. In hac habitasse platea dictumst. Quisque in lectus ac purus elementum blandit.', 'uploads/ejerciciodesubidadeimagen.png', '<iframe width="560" height="315" src="https://www.youtube.com/embed/q10Vm7YVpLM" frameborder="0" allowfullscreen></iframe>', '1', '2015-09-09 17:48:00', '1', '2015-09-12 10:02:24');
 
 -- --------------------------------------------------------
 
@@ -246,7 +246,7 @@ CREATE TABLE IF NOT EXISTS `personamembresia` (
   KEY `fk_persona_has_membresia_membresia1_idx` (`membresiaid`),
   KEY `fk_persona_has_membresia_persona1_idx` (`personaid`),
   KEY `fk_personamembresia_estado1_idx` (`estadoid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `personamembresia`
@@ -255,7 +255,8 @@ CREATE TABLE IF NOT EXISTS `personamembresia` (
 INSERT INTO `personamembresia` (`id`, `personaid`, `membresiaid`, `estadoid`, `fechainicio`, `fechafin`, `usuariocrea`, `fechacrea`, `usuariomodifica`, `fechamodifica`) VALUES
 (1, 1, 2, 2, '2015-09-09', '2015-10-09', '1', '2015-09-10 00:00:00', '1', '2015-09-10 00:00:00'),
 (2, 2, 1, 1, '2015-09-09', '2015-09-10', '1', '2015-09-10 00:00:00', '1', '2015-09-10 00:00:00'),
-(3, 2, 2, 1, '2015-09-01', '2015-10-01', '1', '2015-09-10 00:00:00', '1', '2015-09-10 00:00:00');
+(3, 2, 2, 1, '2015-09-01', '2015-10-01', '1', '2015-09-10 00:00:00', '1', '2015-09-10 00:00:00'),
+(4, 1, 2, 1, '2015-09-10', '2015-10-10', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -384,6 +385,14 @@ ALTER TABLE `personamembresia`
   ADD CONSTRAINT `fk_persona_has_membresia_membresia1` FOREIGN KEY (`membresiaid`) REFERENCES `membresia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_persona_has_membresia_persona1` FOREIGN KEY (`personaid`) REFERENCES `persona` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_personamembresia_estado1` FOREIGN KEY (`estadoid`) REFERENCES `estado` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+DELIMITER $$
+--
+-- Eventos
+--
+CREATE DEFINER=`root`@`localhost` EVENT `ActualizaEstadoPersonaMembresia` ON SCHEDULE EVERY 1 DAY STARTS '2015-01-01 00:00:00' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE personamembresia SET estadoid = 2, fechamodifica = NOW() where fechafin < NOW()$$
+
+DELIMITER ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
