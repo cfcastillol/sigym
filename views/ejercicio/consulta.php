@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\alert\AlertBlock;
 use kartik\select2\Select2;
+use app\models\Helper;
 
 $this->title = 'Consultar ejercicios';
 $this->params['breadcrumbs'][] = $this->title;
@@ -59,7 +60,7 @@ echo AlertBlock::widget([
             <tr>
                 <td><?= $value->musculo->musculo; ?></td>
                 <td><?= $value->ejercicio; ?></td>
-                <td><?= $value->descripcion?></td>
+                <td><?= Helper::myTruncate($value->descripcion, 500) ?></td>
                 <td><?= Html::a('Ver', ['ejercicio/view', 'id' => $value->id], ['class' => 'btn btn-primary']) ?></td>
             </tr>
             
